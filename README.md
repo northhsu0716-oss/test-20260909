@@ -7,8 +7,11 @@
 | 檔案 | 用途 |
 | --- | --- |
 | `CLAUDE.md` | 給 Claude Code 的專案說明骨架 |
-| `hello.txt` | 合併測試用的檔案 |
 | `README.md` | 本檔 |
+| `hello.txt` | 合併測試用的檔案 |
+| `test-branch-file.txt` | 分支合併測試檔（來自 `feature/test0909`） |
+| `test.md` | 測試用 Markdown 檔 |
+| `test-pr-practice.md` | PR 流程練習檔 |
 
 ## 分支
 
