@@ -1,2 +1,33 @@
 測試檔案
 建立於 test 分支，用來驗證合併流程。
+
+## 這個檔案的用途
+
+這個檔案本身沒有程式邏輯，純粹當作 git 操作的練習靶。
+需要驗證下列情境時，直接改這裡的內容就好，不會影響其他檔案：
+
+- 建立分支、切換分支
+- 在不同分支各自修改同一個檔案，製造衝突並解決
+- fast-forward merge 與 no-ff merge 的差異
+- rebase 後的提交歷史長相
+- 從 upstream 同步回本地（origin / upstream 兩個 remote）
+
+## Remote 設定
+
+- origin：自己的 fork，日常 push 的目標
+- upstream：原始 repo，只拉不推
+
+同步 upstream 的慣用做法：
+
+    git fetch upstream
+    git rebase upstream/main
+
+## 修改慣例
+
+每次練習請在下面的紀錄區加一行，寫清楚「哪個分支、做了什麼」，
+這樣看歷史時不用翻 git log 也能知道當初在測什麼。
+
+## 紀錄區
+
+- test 分支：建立本檔案，驗證基本合併流程。
+- docs/expand-notes 分支：補上用途說明、remote 設定與修改慣例。
